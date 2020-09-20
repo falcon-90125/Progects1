@@ -1,4 +1,9 @@
-string_part_1 = 'У Тома '
-string_part_2 = ' яблока'
+a = 15
+b = 0
+try:
+    result = a/b
+except:
+    print('Нельзя делить на 0')
+    result = 0
 
-print(string_part_1 + str(3) + string_part_2)
+print('результат деления = ' + str(result))
