@@ -1,6 +1,4 @@
-a = input('Введите значение переменной "a": ')
-b = input('Введите значение переменной "b": ')
+string_part_1 = 'У Тома '
+string_part_2 = ' яблока'
 
-summ = a + b
-
-print('сумма a и b = ' + str(summ))
+print(string_part_1 + str(3) + string_part_2)
