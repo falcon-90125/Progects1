@@ -1,6 +1,6 @@
 password = input ("Введите пароль: ")
 try:
-    result = password.isalpha()
+    password.isnumeric()
+    print("Требования к паролю соблюдены")
 except:
     print("Ваш пароль состоит только из цифр")
-print("Требования к паролю соблюдены")
