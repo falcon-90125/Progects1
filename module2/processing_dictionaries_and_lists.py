@@ -13,7 +13,7 @@ user_list = [user1, user2, user3, user4]
 key = input("Введите ключ (name или account): ")
 
 try:
-    key.lower() == 'name'
+    key == 'name'
     print("OK")
 except:
     print("bad")
