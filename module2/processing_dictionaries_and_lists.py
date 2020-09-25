@@ -14,7 +14,6 @@ user_list = [user1, user2, user3, user4]
 # user_key = key.lower()
 
 # try:
-#     len(user_key)<4
 #     print(f'значение ключа {user_key} для юзера 1 = {user1[user_key]}')
 #     print(f'значение ключа {user_key} для юзера 2 = {user2[user_key]}')
 #     print(f'значение ключа {user_key} для юзера 3 = {user3[user_key]}')
@@ -23,7 +22,16 @@ user_list = [user1, user2, user3, user4]
 # except KeyError:
 #     print ("Введенный ключ не найден")
 
-serial_number = input('Введите порядковый номер: ')
+sequence_number = int(input('Введите порядковый номер: ')) #порядковый номер
+#sequence_number_adapted = int(sequence_number) - 1 #порядковый номер адаптированный под user_list - может не пригодится
 
-print ('Данные по юзеру №' + str(serial_number) + ':')
-print (user_list[serial_number])
+if sequence_number > 4:
+    print('Пользователь с указанным номером не найден')
+elif sequence_number < 1:
+    print('Пользователь с указанным номером не найден')
+elif sequence_number == 2:
+    print ('Данные по юзеру №' + str(sequence_number) + ':')
+elif sequence_number == 3:
+    print ('Данные по юзеру №' + str(sequence_number) + ':')
+else:
+    print ('Данные по юзеру №' + str(sequence_number) + ':')
