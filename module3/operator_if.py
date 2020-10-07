@@ -16,17 +16,12 @@ else:
         if city.lower().title() == (cities[2]): # сравнение введёного города со списком cities
             print (f"Турист {users[2]['name']} возраст {users[2]['age']}. Посетил город {city.lower().title()}") # вывод имени, возраста туриста и города посещения, соотв. введённому
         else:
-            print ('Такой город ни кто не посещал') # если введён город не из списка
+            print ('Такой город ни кто неs посещал') # если введён город не из списка
 
 # Решил: sleovochkina@gmail.com
 # if city in cities:
-
 #     for tourist in tourists:
-
 #         if tourist['city'] == city:
-
 #             print(f"Турист {tourist['user']['name']} возраст {tourist['user']['age']}. Посетил город {tourist['city']}")
-
 # else:
-
 #     print('Этот город еще никто не посещал')

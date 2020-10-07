@@ -10,4 +10,3 @@ except ZeroDivisionError:
     
 except ValueError: # если int в условии не смог преобразовать пароль значит есть буквы
     print("Требования к паролю соблюдены")
-
