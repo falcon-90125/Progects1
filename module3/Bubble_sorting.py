@@ -7,4 +7,4 @@ for i in range(len(elements)):
             elements[i] = elements[j]
             elements[j] = temp
 
-print(elements)
+print (elements)
