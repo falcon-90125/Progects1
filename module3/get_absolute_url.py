@@ -2,11 +2,11 @@ def get_absolute_url(url, *args, **kwargs):
     
     way = url
     for i in args:
-        way += '/' + i
+        way += '/' + i #добавляем в путь позиционные аргументы
     way += '?'
     for k, v in kwargs.items():
-        way += k + '=' + v + '&'
-    way = way[:-1]
+        way += k + '=' + v + '&' #добавляем в путь именнованные аргументы
+    way = way[:-1] # отсекаем в пути последний символ '&'
     return way
 
 print(get_absolute_url('www.yandex.ru', 'posts', 'news', id='24', author='admin'))
